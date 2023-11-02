@@ -1,0 +1,484 @@
+.App {
+  height: 100%;
+  width: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; */
+}
+
+/* Track input CSS */
+.track {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(114, 113, 113, 0.382),
+      rgba(91, 90, 90, 0.295)
+    ),
+    url(./pexels-tima-miroshnichenko-6169660.jpg);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.track h3 {
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.track-input {
+  width: 40%;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+}
+form > button {
+  padding: 12px;
+  width: 85px;
+  background-color: #ee4036;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-weight: 500;
+  border: none;
+}
+
+/* Style for the toggle button */
+.toggle-button {
+  display: none; /* Initially hide the button on larger screens */
+}
+
+.shipping {
+  width: 100%;
+  background: rgb(224, 213, 213);
+  padding-block: 30px;
+}
+
+.ship-title {
+  text-align: center;
+}
+
+.ship-title h1 {
+  color: #ee4036;
+  font-size: 45px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.ship-title p {
+  color: black;
+  font-size: 25px;
+}
+
+.shipping-categories {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.document-shipping {
+  display: grid;
+  padding: 10px;
+  margin-block: 10px;
+  width: 50%;
+  /* background-color: green; */
+  text-align: center;
+  box-shadow: 0 0 0.1em 0.1em gray;
+  border-radius: 5px;
+  gap: 30px;
+  transition: transform 400ms;
+}
+
+.document-shipping:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  margin-block: 15px;
+}
+
+.description h3 {
+  color: #ee4036;
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+.description p {
+  color: black;
+  font-size: 22px;
+  line-height: 2;
+}
+
+.image-description > img {
+  width: 100%;
+  border-radius: 8px;
+  display: inline-block;
+  align-items: flex-end;
+}
+
+/* .other-services {
+  background-color: black;
+} */
+.other-services * p {
+  color: black;
+}
+/* 
+.road,
+.air {
+  background-color: white;
+} */
+
+.help {
+  background-color: white;
+}
+.help-p {
+  padding-block: 12px;
+}
+.ship-title a {
+  text-decoration: none;
+}
+.ship-title > a > h3 {
+  color: #ee4036;
+}
+
+.ship-title > a > h3:hover {
+  text-decoration: underline;
+}
+
+.faq {
+  text-decoration: none;
+}
+.faq h3 {
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.about-container {
+  margin-top: 5px;
+  padding: 15px 50px;
+  line-height: 2;
+}
+
+.about-container h2 {
+  margin-block: 15px;
+}
+
+.about-container h2,
+h3 {
+  color: var(--primary-color);
+}
+.about-container * p {
+  font-weight: lighter;
+}
+/* foooter CSS */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px 0;
+  font-weight: 500;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: 50px;
+  /* border-radius: 50%; */
+}
+
+.footer-logo p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer-links a:hover {
+  color: rgb(194, 241, 252);
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.footer-social {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-bottom: 8px;
+}
+
+.footer-social p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 12px;
+  font-size: 10px;
+  width: 35px;
+  aspect-ratio: 1;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.copyright {
+  margin: 10px;
+  font-size: 12px;
+}
+
+/* for the search bar which should only show at min-width of 685px */
+@media (min-width: 685px) {
+  .search-bar {
+    display: block;
+  }
+}
+/* Create a responsive navigation for small screens (e.g., mobile devices) */
+@media screen and (max-width: 600px) {
+  .search-bar {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .toggle-button {
+    display: block; /* Show the button on smaller screens */
+  }
+
+  .show {
+    display: block; /* Show the navigation when the "show" class is applied */
+  }
+
+  /* Style for the button icon (a simple three-bar menu icon) */
+  .toggle-button-icon {
+    color: white;
+    font-size: 25px;
+    padding: 15px 0 15px 10px;
+  }
+
+  header {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    height: 70px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 70px;
+    margin: auto 5px;
+  }
+
+  .navigation a {
+    float: none;
+    width: 100%;
+  }
+
+  .nav-search {
+    display: block;
+  }
+
+  .location {
+    display: none;
+  }
+
+  #location-link {
+    display: block;
+  }
+
+  #service-link {
+    margin-left: 0;
+  }
+
+  form input {
+    padding: 10px;
+    height: 25px;
+    width: 50%;
+  }
+
+  form > button {
+    padding: 8px;
+    /* height: 25px; */
+    width: 65px;
+  }
+
+  .shipping-categories {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .document-shipping {
+    width: 80%;
+    margin: 10px auto;
+    /* background-color: green; */
+  }
+
+  .image-description img {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+  }
+
+  .footer-links ul {
+    padding-left: 0;
+  }
+
+  .footer-links li {
+    margin: 10px 0;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+}
+
+/* progress */
+ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.title {
+  color: #12b76a;
+  margin: 0 40px;
+}
+.progress {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 15px 0;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background-color: #d0d5dd;
+}
+.progress::after {
+  content: " ";
+  position: absolute;
+  width: 165px;
+  height: 5px;
+  right: 30px;
+  background-color: #d0d5dd;
+}
+.one::after {
+  width: 0;
+  height: 0;
+}
+.active {
+  background-color: #12b76a;
+  display: grid;
+  place-items: center;
+}
+.active::after {
+  background-color: #12b76a;
+}
+
+@media (max-width: 950px) {
+  .location {
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+  }
+  ul li {
+    flex-direction: row;
+  }
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 40px;
+    margin-left: 0;
+  }
+  .progress {
+    margin: 25px 20px;
+  }
+  .progress::after {
+    width: 5px;
+    height: 50px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .one::after {
+    height: 0;
+  }
+}
