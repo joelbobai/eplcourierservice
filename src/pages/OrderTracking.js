@@ -3,7 +3,7 @@ import Items from "../components/items/Items";
 import { toast } from "react-toastify";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-let firstRender = true;
+// let firstRender = true;
 const OrderTracking = () => {
   const { id } = useParams();
   const moveTo = useNavigate();
@@ -45,21 +45,21 @@ const OrderTracking = () => {
     }
   };
   useEffect(() => {
-    console.log("yset");
-    if (firstRender) {
-      firstRender = false;
-      sendRequest().then((data) => {
-        try {
-          setTrackingInfo(data);
-          sendRequestItem().then((items) => {
-            setItemInfo(items);
-          });
-        } catch (error) {
-          errorHandle(error);
-        }
-      });
-    }
-  });
+    // console.log("yset");
+    // if (firstRender) {
+    firstRender = false;
+    sendRequest().then((data) => {
+      try {
+        setTrackingInfo(data);
+        sendRequestItem().then((items) => {
+          setItemInfo(items);
+        });
+      } catch (error) {
+        errorHandle(error);
+      }
+    });
+    // }
+  }, []);
 
   const errorHandle = (err) => {
     toast.error(err, {
