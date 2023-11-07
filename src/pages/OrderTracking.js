@@ -47,7 +47,7 @@ const OrderTracking = () => {
   useEffect(() => {
     // console.log("yset");
     // if (firstRender) {
-    firstRender = false;
+//    firstRender = false;
     sendRequest().then((data) => {
       try {
         setTrackingInfo(data);
